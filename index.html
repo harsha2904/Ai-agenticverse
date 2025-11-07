@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repeatless AI - AI Automation Agency | Scale Your Business</title>
+    <meta name="description" content="Automate your growth with AI. Repeatless AI builds smart automation solutions that scale your business through chatbots, workflow automation, and content generation." />
+    <meta name="author" content="Repeatless AI" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Repeatless AI - AI Automation Agency" />
+    <meta property="og:description" content="Automate your growth with AI. Build smart automation that scales your business." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Chat Widget Configuration -->
+    <script>
+      window.ChatWidgetConfig = {
+        webhook: {
+          url: 'https://n8n.srv1076448.hstgr.cloud/webhook/0f8ec1dc-9f03-4adc-b2f0-c7b0207e74ae/chat',
+          route: 'general'
+        },
+        branding: {
+          logo: 'https://www.stringmetaverse.com/images/logo.svg',
+          name: 'String Meta Verse',
+          welcomeText: 'Get instant answers to your questions!',
+          responseTimeText: 'Click the button below to start chatting'
+        },
+        style: {
+          primaryColor: '#10b981',
+          secondaryColor: '#059669',
+          position: 'right',
+          backgroundColor: '#ffffff',
+          fontColor: '#1f2937'
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/funtastic418/chat-widget@main/chat-widget.js"></script>
+    
+    <!-- Remove Chat Widget Footer Link -->
+    <script>
+      const interval = setInterval(() => {
+        const link = document.querySelector('.chat-footer-link');
+        if (link) {
+          link.remove();
+          clearInterval(interval);
+        }
+      }, 300);
+    </script>
+  </body>
+</html>
